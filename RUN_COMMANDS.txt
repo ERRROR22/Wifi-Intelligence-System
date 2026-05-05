@@ -1,0 +1,13 @@
+# WiFi Intelligence System - Execution Commands
+
+# 1. Install the required dependencies (if you haven't already):
+pip install -r requirements.txt
+
+# 2. Run the main Streamlit dashboard (Standard Mode):
+streamlit run dashboard.py
+
+# Note on Network Scanning:
+# The network scanner uses Scapy, which requires root privileges for the most accurate device discovery.
+# If you run it normally, it will fall back to a slower ping-sweep method.
+# If you want full network discovery capabilities, run Streamlit with sudo:
+sudo $(command -v streamlit) run dashboard.py
